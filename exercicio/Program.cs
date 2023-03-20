@@ -1,15 +1,19 @@
-﻿bool Continuar = true;
+﻿bool continuar = true;
 
-Console.Clear();
-System.Console.WriteLine("--- Jogo do Adivinha ---\n");
+const int FACIL = 1;
+const int MEDIO = 2;
+const int DIFICIL = 3;
+const int SAIR = 4;
 
-while (Continuar)
+while (continuar)
 {
     Console.Clear();
+    Console.WriteLine("--- Jogo do Adivinha ---\n");
     Console.WriteLine("Escolha o nível de dificuldade");
     Console.WriteLine("[1] Fácil = 15 chances");
     Console.WriteLine("[2] Médio = 10 chances");
     Console.WriteLine("[3] Difícil = 5 chances");
+    Console.WriteLine("[4] Sair do Jogo");
 
     int dificuldade = Convert.ToInt32(Console.ReadLine());
 
@@ -17,16 +21,20 @@ while (Continuar)
 
     switch (dificuldade)
     {
-        case 1:
+        case FACIL:
             chances = 15;
             break;
 
-        case 2:
+        case MEDIO:
             chances = 10;
             break;
 
-        case 3:
+        case DIFICIL:
             chances = 5;
+            break;
+
+        case SAIR:
+            continuar = false;
             break;
 
         default:
@@ -35,12 +43,15 @@ while (Continuar)
             continue;
     }
 
+    if (continuar == false)
+        break;
+
     Random random = new Random();
     int numeroSorteado = random.Next(1, 20);
 
     int pontuacaoInicial = 1000;
 
-    for (int i = 1; i < chances; i++)
+    for (int i = 1; i <= chances; i++)
     {
         Console.Clear();
         Console.WriteLine($"Tentativa {i} de {chances}.\n");
@@ -61,14 +72,19 @@ while (Continuar)
             }
 
             pontuacaoInicial -= CalcularPontos(numeroChutado, numeroSorteado);
-
-            Console.WriteLine($"Voçe fez {pontuacaoInicial} pontos.");
-
         }
         else
         {
-            Console.WriteLine("Parabéns voçe acertou!!!");
+            Console.Clear();
+            Console.WriteLine($"\nParabéns voçe acertou o Nr {numeroSorteado}");
+            Console.WriteLine($"Voçe fez {pontuacaoInicial} pontos.\n");
             break;
+        }
+
+        if (i == chances)
+        {
+            Console.Clear();
+            Console.WriteLine($"Fim de jogo voçe fez {pontuacaoInicial} pontos.\n");
         }
 
         Console.ReadKey();
@@ -89,6 +105,6 @@ void JogarNovamente()
     var opcao = Console.ReadLine();
 
     if (opcao == "2")
-        Continuar = false;
+        continuar = false;
 }
 
