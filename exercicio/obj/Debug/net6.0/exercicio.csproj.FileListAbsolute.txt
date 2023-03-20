@@ -1,0 +1,15 @@
+C:\AP\Modulo_1\JogoDaAdivinhacao\exercicio\bin\Debug\net6.0\exercicio.exe
+C:\AP\Modulo_1\JogoDaAdivinhacao\exercicio\bin\Debug\net6.0\exercicio.deps.json
+C:\AP\Modulo_1\JogoDaAdivinhacao\exercicio\bin\Debug\net6.0\exercicio.runtimeconfig.json
+C:\AP\Modulo_1\JogoDaAdivinhacao\exercicio\bin\Debug\net6.0\exercicio.dll
+C:\AP\Modulo_1\JogoDaAdivinhacao\exercicio\bin\Debug\net6.0\exercicio.pdb
+C:\AP\Modulo_1\JogoDaAdivinhacao\exercicio\obj\Debug\net6.0\exercicio.csproj.AssemblyReference.cache
+C:\AP\Modulo_1\JogoDaAdivinhacao\exercicio\obj\Debug\net6.0\exercicio.GeneratedMSBuildEditorConfig.editorconfig
+C:\AP\Modulo_1\JogoDaAdivinhacao\exercicio\obj\Debug\net6.0\exercicio.AssemblyInfoInputs.cache
+C:\AP\Modulo_1\JogoDaAdivinhacao\exercicio\obj\Debug\net6.0\exercicio.AssemblyInfo.cs
+C:\AP\Modulo_1\JogoDaAdivinhacao\exercicio\obj\Debug\net6.0\exercicio.csproj.CoreCompileInputs.cache
+C:\AP\Modulo_1\JogoDaAdivinhacao\exercicio\obj\Debug\net6.0\exercicio.dll
+C:\AP\Modulo_1\JogoDaAdivinhacao\exercicio\obj\Debug\net6.0\refint\exercicio.dll
+C:\AP\Modulo_1\JogoDaAdivinhacao\exercicio\obj\Debug\net6.0\exercicio.pdb
+C:\AP\Modulo_1\JogoDaAdivinhacao\exercicio\obj\Debug\net6.0\exercicio.genruntimeconfig.cache
+C:\AP\Modulo_1\JogoDaAdivinhacao\exercicio\obj\Debug\net6.0\ref\exercicio.dll
