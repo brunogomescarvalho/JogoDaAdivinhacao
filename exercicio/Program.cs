@@ -1,7 +1,7 @@
 ﻿bool Continuar = true;
 
 Console.Clear();
-System.Console.WriteLine("Jogo do Adivinha\n");
+System.Console.WriteLine("--- Jogo do Adivinha ---\n");
 
 while (Continuar)
 {
@@ -57,7 +57,7 @@ while (Continuar)
             }
             if (numeroChutado > numeroSorteado)
             {
-                Console.WriteLine("Seu numero foi maior que o numero secreto.");
+                Console.WriteLine("Seu chute foi maior que o número secreto.");
             }
 
             pontuacaoInicial -= CalcularPontos(numeroChutado, numeroSorteado);
@@ -67,10 +67,10 @@ while (Continuar)
         }
         else
         {
-            Console.WriteLine("Parabens voçê acertou!!!");
+            Console.WriteLine("Parabéns voçe acertou!!!");
             break;
         }
-        
+
         Console.ReadKey();
     }
 
