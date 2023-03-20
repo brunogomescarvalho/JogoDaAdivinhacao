@@ -1,4 +1,10 @@
-﻿bool continuar = true;
+﻿/*Desenvolva um jogo de adivinhação. O computador pensará em um número, e você, jogador, precisará adivinhá-lo.
+A cada erro, a máquina lhe dirá se o número chutado foi maior ou menor do que o pensado. Você também poderá
+escolher o nível de dificuldade do jogo, e isso lhe dará mais ou menos oportunidades de chutar um número. Ao
+final, se você ganhar, o computador lhe dirá quantos pontos você fez, baseando-se em quão bons eram seus
+chutes.*/
+
+bool continuar = true;
 
 const int FACIL = 1;
 const int MEDIO = 2;
@@ -8,7 +14,7 @@ const int SAIR = 4;
 while (continuar)
 {
     Console.Clear();
-    Console.WriteLine("--- Jogo do Adivinha ---\n");
+    Console.WriteLine("--- Jogo de Adivinhação ---\n");
     Console.WriteLine("Escolha o nível de dificuldade");
     Console.WriteLine("[1] Fácil = 15 chances");
     Console.WriteLine("[2] Médio = 10 chances");
@@ -77,14 +83,14 @@ while (continuar)
         {
             Console.Clear();
             Console.WriteLine($"\nParabéns voçe acertou o Nr {numeroSorteado}");
-            Console.WriteLine($"Voçe fez {pontuacaoInicial} pontos.\n");
+            Console.WriteLine($"Você fez {pontuacaoInicial} pontos.\n");
             break;
         }
 
         if (i == chances)
         {
             Console.Clear();
-            Console.WriteLine($"Fim de jogo voçe fez {pontuacaoInicial} pontos.\n");
+            Console.WriteLine($"Fim de jogo você fez {pontuacaoInicial} pontos.\n");
         }
 
         Console.ReadKey();
@@ -101,7 +107,8 @@ int CalcularPontos(int numeroChutado, int numeroSorteado)
 
 void JogarNovamente()
 {
-    Console.WriteLine("Deseja jogar novamente [1] Sim [2] Não");
+    Console.Clear();
+    Console.WriteLine("Deseja jogar novamente? [1] Sim [2] Não");
     var opcao = Console.ReadLine();
 
     if (opcao == "2")
