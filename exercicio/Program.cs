@@ -66,7 +66,7 @@ while (continuar)
         Console.Clear();
         Console.WriteLine($"Tentativa {i} de {chances}. Nível: {nivel}\n");
 
-        Console.WriteLine($"Qual o seu {i}º chute.\n");
+        Console.WriteLine($"Qual o seu {i}º chute?\n");
 
         int numeroChutado = Convert.ToInt32(Console.ReadLine());
 
@@ -76,7 +76,7 @@ while (continuar)
         {
             if (numeroChutado > NUMERO_MAXIMO)
             {
-                Console.WriteLine($"\nUma dica o número máximo é: {NUMERO_MAXIMO}");
+                Console.WriteLine($"\nUma dica, o número máximo é: {NUMERO_MAXIMO}"); 
             }
             if (numeroChutado < numeroSorteado && numeroChutado <= NUMERO_MAXIMO)
             {
@@ -92,7 +92,7 @@ while (continuar)
         else
         {
             Console.Clear();
-            Console.WriteLine($"\nParabéns você acertou! Nr - {numeroSorteado}");
+            Console.WriteLine($"\nParabéns, você acertou! Nr - {numeroSorteado}");
             Console.WriteLine($"\nVocê fez {pontuacaoInicial} pontos.\n\nTecle para continuar...");
             Console.ReadKey();
             break;
@@ -101,7 +101,7 @@ while (continuar)
         if (i == chances)
         {
             Console.Clear();
-            Console.WriteLine($"Fim de jogo você fez {pontuacaoInicial} pontos.\n");
+            Console.WriteLine($"Fim de jogo! Você fez {pontuacaoInicial} pontos.\n");
             Console.WriteLine($"O número secreto era: {numeroSorteado}");
         }
 
