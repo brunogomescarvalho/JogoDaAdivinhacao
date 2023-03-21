@@ -76,7 +76,7 @@ while (continuar)
         {
             if (numeroChutado > NUMERO_MAXIMO)
             {
-                Console.WriteLine($"\nUma dica, o número máximo é: {NUMERO_MAXIMO}"); 
+                Console.WriteLine($"\nUma dica: O número máximo é: {NUMERO_MAXIMO}"); 
             }
             if (numeroChutado < numeroSorteado && numeroChutado <= NUMERO_MAXIMO)
             {
