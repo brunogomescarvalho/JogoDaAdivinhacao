@@ -76,13 +76,13 @@ while (continuar)
         {
             if (numeroChutado > NUMERO_MAXIMO)
             {
-                Console.WriteLine($"\nUma dica: O número máximo é: {NUMERO_MAXIMO}"); 
+                Console.WriteLine($"\nUma dica: O número máximo é: {NUMERO_MAXIMO}");
             }
-            if (numeroChutado < numeroSorteado && numeroChutado <= NUMERO_MAXIMO)
+            else if (numeroChutado < numeroSorteado)
             {
                 Console.WriteLine("Seu chute foi menor que o número secreto.");
             }
-            if (numeroChutado > numeroSorteado && numeroChutado <= NUMERO_MAXIMO)
+            else if (numeroChutado > numeroSorteado)
             {
                 Console.WriteLine("Seu chute foi maior que o número secreto.");
             }
